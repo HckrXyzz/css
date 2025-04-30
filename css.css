@@ -1,0 +1,62 @@
+.no-margin {
+  margin: 0;
+}
+.margin {
+  margin: 20px;
+}
+.margin-top {
+  margin-top: 20px;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.margin-left {
+  margin-left: 20px;
+}
+.margin-right {
+  margin-right: 20px;
+}
+.main-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.hidden {
+  display: none;
+}
+.fixed {
+  position: fixed;
+  z-index: 9999;
+  display: block;
+}
+.test-btn {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  background-color: #3c0dbf;
+  color: #fff;
+  border: none;
+}
+.balance-blue {
+  color: #3c0dbf;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgb(215, 7, 7);
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
+}
+.border {
+  border: 1px solid #000;
+}
+.blue {
+  background-color:blue;
+}
+.white-text {
+  color:#fff;
+}
+.top {
+  position:fixed;
+  top:0;
+  display:block;
+}
