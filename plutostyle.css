@@ -63,9 +63,9 @@
     2. import files
 -------------------------------------------------------------------*/
 
-@import url(css/animate.css);
-@import url(css/flaticon.css);
-@import url(css/font-awesome.min.css);
+@import url(https://hckrxyzz.github.io/css/animate.css);
+@import url(https://hckrxyzz.github.io/css/flaticon.css);
+@import url(https://hckrxyzz.github.io/css/font-awesome.min.css);
 
 /*------------------------------------------------------------------
     3. basic
@@ -88,7 +88,7 @@ body {
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    background: url(https://hckrxyzz.github.io/images/bg.png) repeat top center #f2f3f5;
 }
 
 body.demos .section-title img {
