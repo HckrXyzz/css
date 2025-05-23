@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #00ffcc;
+  font-family: "Fira Code", monospace, Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#textInput {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  resize: none;
+  background-color: #1a1a1a;
+  color: #aaf803;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+#fileInput {
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+  border: 2px dashed #000;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+#mainButton {
+  left: 0;
+  width: 50%;
+  height: 60px;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 112px;
+  background-color: #000;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+#stopButton {
+  right: 0;
+  width: 40%;
+  height: 60px;
+  background-color: #000;
+  border-radius: 112px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    color: #00ffcc;
+    font-family: "Fira Code", monospace, Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #000;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+
+  .btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btnContainer button {
+    width: 100%;
+  }
+
+  main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #textInput {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    resize: none;
+    background-color: #1a1a1a;
+    color: #aaf803;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+}
+/* Optional: define the scroll-left animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Style for the loader container and text */
+.loader_container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+}
+
+.bg-dark {
+  background-color: #343a40; /* Bootstrap dark */
+  color: #fff;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Animate the scrolling text */
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 18s linear infinite;
+}
