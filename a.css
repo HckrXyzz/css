@@ -5,14 +5,13 @@
 }
 
 body {
-  color: #00ffcc;
   font-family: "Fira Code", monospace, Arial, sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-#textInput {
+.textInput {
   width: 100%;
   height: 200px;
   margin-top: 20px;
@@ -22,7 +21,7 @@ body {
   box-shadow: 0 0 15px #00ffcc;
 }
 
-#fileInput {
+.fileInput {
   margin-top: 20px;
   background-color: #1a1a1a;
   box-sizing: border-box;
@@ -30,14 +29,14 @@ body {
   box-shadow: 0 0 15px #00ffcc;
 }
 
-button {
+.button {
   cursor: pointer;
   padding: 10px;
   margin: 10px;
   box-shadow: 0 0 15px #00ffcc;
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,7 +50,7 @@ header {
   box-shadow: 0 0 15px #00ffcc;
 }
 
-#mainButton {
+.mainButton {
   left: 0;
   width: 50%;
   height: 60px;
@@ -71,12 +70,6 @@ header {
   box-shadow: 0 0 15px #00ffcc;
 }
 
-main {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  box-shadow: 0 0 15px #00ffcc;
-}
-
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -85,7 +78,7 @@ main {
     min-height: 100vh;
   }
 
-  header {
+  .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -109,14 +102,18 @@ main {
   .btnContainer button {
     width: 100%;
   }
-
-  main {
+  .main {
     margin-top: 100px;
     margin-bottom: 100px;
     box-shadow: 0 0 15px #00ffcc;
   }
-
-  footer {
+#wordListContainer {
+  margin-top: 10px;
+  color: #000;
+  box-shadow:1px 2px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -127,7 +124,7 @@ main {
     align-items: center;
   }
 
-  #textInput {
+  .textInput {
     width: 100%;
     height: 200px;
     margin-top: 20px;
@@ -156,10 +153,6 @@ main {
   margin-top: 10px;
 }
 
-.bg-dark {
-  background-color: #343a40; /* Bootstrap dark */
-  color: #fff;
-}
 
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
